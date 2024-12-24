@@ -1,0 +1,63 @@
+configuration {
+  modes: [ run, drun, window, combi, ssh, filebrowser, keys ];
+  combi-modes: [ window, drun, run ];
+  kb-cancel: "Escape,Control+g,Control+bracketleft";
+}
+
+@theme "fancy"
+
+// theme modifications
+* {
+    font: "Splatoon2 15";
+}
+
+button {
+    font: "Splatoon1 15";
+}
+
+entry {
+    placeholder: "Look for something!";
+}
+
+window {
+    background-color: rgb(65, 65, 65);
+    border:           0px;
+    fullscreen: false;
+    width: 80%;
+    height: 70%;
+    y-offset: -35%;
+    
+}
+
+wrapper-mode-switcher {
+    background-color: rgb(10, 10, 10);
+    border-radius: 10px 10px 0px 0px;
+}
+
+button {
+    border-color: rgb(10, 10, 10, 0%);
+    text-color: white;
+}
+
+button selected.normal {
+    border-color: rgb(125, 88, 252, 100%);
+    background-color: rgb(125, 88, 252, 100%);
+}
+
+listview {
+    border-color: rgb(10, 10, 10, 0%);
+    border: 0px 0px 0px 0px;
+}
+
+sidebar {
+    border-color: rgb(10, 10, 10, 0%);
+}
+
+icon-ms-ic1,icon-ms-ic2 {
+    border-color: rgb(10, 10, 10, 0%);
+    size: 0px;
+}
+
+icon-k {
+    size: 0;
+}
